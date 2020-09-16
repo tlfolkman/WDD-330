@@ -4,5 +4,5 @@ weeks.forEach(myFunction);
 links.forEach(myFunction);
 
 function myFunction(weeks, links) {
-  document.getElementById("list").innerHTML += "<a href=" + links + ">" + weeks + "<br>";
+  document.getElementById("list").innerHTML += "<a href=" + '"' + links + '"' + ">" + weeks + "</a>" + "<br>";
 }
