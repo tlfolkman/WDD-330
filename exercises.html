@@ -4,7 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trae Folkman's WDD-330 Exercises</title>
+
+    <style>
+      label
+      {
+        display: block;
+      }
+    </style>
+    
   </head>
   <body>
-      <h1 style="color: black;">Exercises</h1>
+      <h1 style="color: black;">Contact us</h1>
+
+        <form>
+          <p>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter Name" id="name-spot">
+          </p>
+
+          <p>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Last name">
+          </p>
+
+          <p>
+            <label for="major">Major</label>
+            <input type="textarea" id="Major" placeholder="Major">
+          </p>
+
+          <button>Enter</button>
+
+        </form>
   </body>
+
+  <script>
+    const namespot = document.getElementById("name-spot");
+  </script>

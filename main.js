@@ -1,7 +1,13 @@
-var weeks = ["Week 1", "Week 2", "Week 3"];
-var links = ["notes.html", "challenges.html", "exercises.html"]
-weeks.forEach(myFunction);
+const links = [
+  {
+    label: "Week 1",
+    url:  "notes.html"
+  }
+]
 
-function myFunction(weeks, links) {
-  document.getElementById("list").innerHTML += "<a href=" + '"' + links + '"' + ">" + weeks + "</a>" + "<br>";
+links.forEach(myfunction)
+
+function myfunction(links)
+{
+  document.getElementById("list").innerHTML = "<li><a href=" + links["url"] + ">" + links["label"] + "</a></li>" 
 }
