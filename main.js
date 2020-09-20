@@ -3,6 +3,11 @@ const links = [
     label: "Week 1",
     url:  "week1.html"
   }
+  ,
+  {
+    label: "week 2",
+    url: "week_2.html" 
+  }
 ]
 
 links.forEach(myfunction)
