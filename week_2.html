@@ -4,39 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trae Folkman's WDD-330 Exercises</title>
-
-    <style>
-      label
-      {
-        display: block;
-      }
-    </style>
-    
   </head>
   <body>
-      <h1 style="color: black;">Contact us</h1>
+    <h1 style="text-align: center;">Week 2</h1>
+    <h2>Notes</h2>
+    <p>Programming – making computers do what we want them to <br>
+      3 categories of programming languages <br>
+        Low-level programing – Language that is closer to the hardware of a computer <br>
+        High-level programming – Languages that are easier to understand and write <br>
+        Script – Languages that turn into machine code upon running <br>
+    
+        <br>
+        <br>
 
-        <form>
-          <p>
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Enter Name" id="name-spot">
-          </p>
+    JavaScript – High level language that is compiled at run time <br>
+      Also a dynamic langue, meaning that elements of the program can while its running <br>
+      So, a program can run things in the background like type or spell checking <br>
+    
+      <br>
 
-          <p>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" placeholder="Last name">
-          </p>
+    HTML5 – The dominant programming language for the web <br>
+      JavaScript is a key feature in using html5 to its fullest potential <br>
+    
+      <br>
 
-          <p>
-            <label for="major">Major</label>
-            <input type="textarea" id="Major" placeholder="Major">
-          </p>
+    Unobtrusive JavaScript <br>
+      Originally, java script was directly inputted into the html code <br>
+        This made it much harder to read, write, and understand <br>
+      A script tag can be used in the html to keep all of the JavaScript in one place <br>
+        Making it much easier to understand and write <br>
+      A link to a JavaScript file can be used script src=”main.js” <br>
+        Takes all java code out of the html file creating an organized space for JavaScript code and allows for large functions to be written <br>
 
-          <button>Enter</button>
+        <br>
+        <br>
 
-        </form>
+    JavaScript Arrays <br>
+      Used to store multiple values in a single variable <br>
+      To create an array: <br>
+    var array_name = [values] <br>
+      Can also use key word new to create an array: <br>
+        Var array_name = new Array(values) <br>
+    This way yields the same result as the other but is less simple, so using the other way is best <br>
+      Can access the elements in an array using the index number <br>
+        For example, [0] would point to the first element <br>
+      Can change specific elements in array’s using the index <br>
+        Array_name[0] =  “new value” <br>
+      Full arrays can be acsessed by using the full name of the array <br>
+
+      <br>
+      <br>
+
+    Arrays properties and methods <br>
+      There are various properties and methods for using arrays in JavaScript <br>
+      Length property <br>
+        Returns the number of elements in the array <br>
+      Sort() property <br>
+        Sorts the array <br>
+      Push() property <br>
+        Adds new elements to the array <br>
+      These are just a few examples, there are more <br>
+
+      <br>
+      <br>
+
+    JavaScript Loops <br>
+      For loop <br>
+        Loops through a block of code a number of times <br>
+          Syntax: <br>
+            for (statement 1; statement 2; statement 3) {
+                // code block to be executed
+    }
+     <br>
+      For/in loop <br>	
+        Loops through the properties of an object <br>
+          Syntax: <br>
+            for (x in object) {
+            }
+      <br>
+
+      For/of loop <br>
+        Loops through the values of an inerrable object <br>
+          Syntax: <br>
+            for (variable of iterable) {
+            }
+      <br>
+      While loop <br>
+        Loops through a block of code when a certain condition is true <br>
+          Syntax: <br>
+            while (condition) {
+            }
+      
+    <br>
+
+    Do/while loop <br>
+        Loops through a block of code when certain condition is true (similar to while) <br>
+          Syntax: <br>
+            Do {
+            }
+            While (condition)
+
+    <br>
+    <br>
+  
+    JavaScript Functions <br>
+      A function is a block of code designed to perform a particular task. <br>
+      Use the function key word to define a function: 
+        function my function() {
+        }
+      <br>
+      The code inside a function will only execute when something invokes (calls) it <br>
+      The return statement is used to return a value when the function is called <br>
+      Local variables can be described in the scope of the function and only used in that scope <br>
+      Functions offer a way to reuse code multiple times
+    </p>
   </body>
-
-  <script>
-    const namespot = document.getElementById("name-spot");
-  </script>
