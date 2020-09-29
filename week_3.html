@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trae Folkman's WDD-330 Week 3</title>
+  </head>
+  <body>
+      <h1 style="color: black; text-align: center;">Week 3</h1>
+
+      <h2 style="color:black">Team Activiy</h2>
+      
+      <label for="data">Enter Text</label>
+      <input type="text" id="data" name="data">
+      <button onclick="display()">Enter</button>
+      
+      <div id="sect">
+
+      </div>
+        
+      <label for="number">Enter number</label>
+      <input type="number" id="number">
+      <button onclick="compute()">Enter</button>
+      
+      <div id="sect_2">
+
+      </div>
+    
+      <label for="number1">Enter number</label>
+      <input type="number" id="number1">
+      <label for="number2">Enter number</label>
+      <input type="number" id="number2">
+      <button type="button" onclick="add()">Add Numbers</button>
+    
+      <div id="sect_3">
+
+      </div>
+
+      <h2 style="color: black;">Notes</h2>
+      <a href="https://1drv.ms/w/s!AsA5M8tN1_UshXzllHAJ2eZctCgh?e=AYzzlo">View Notes</a>
+    </body>
+    <script>
+      function display() {
+        var data = document.getElementById("data").value;    
+        document.getElementById("sect").innerHTML = data;
+      }
+      
+      function compute() {
+        var number = document.getElementById("number").value;
+        var sum = 0;
+  
+        for (i = 0; i < number; i++)
+        {
+          sum += i;
+        }
+  
+        sum += +number;
+  
+        document.getElementById("sect_2").innerHTML = sum;  
+      }
+  
+      function add() {
+        num_1 = parseInt(document.getElementById("number1").value);
+        num_2 = parseInt(document.getElementById("number2").value);
+        
+        document.getElementById("sect_3").innerHTML = num_1 + num_2;
+      }
+  </script>
